@@ -14,10 +14,10 @@ struct MenuItem: Identifiable {
 }
 
 let menuItems = [
-    MenuItem(function: "moment",  imageName: "kiss"),
-    MenuItem(function: "photo",  imageName: "flower"),
-    MenuItem(function: "test",  imageName: "Tang1"),
-    MenuItem(function: "test",  imageName: "Tang2"),
-    MenuItem(function: "test",  imageName: "Tang3")
+    MenuItem(function: "Moment",  imageName: "kiss"),
+    MenuItem(function: "Photo",  imageName: "loveTangForever"),
+    MenuItem(function: "Test",  imageName: "loveTangHundredTimes"),
+    MenuItem(function: "Test",  imageName: "loveTangThousandTimes"),
+    MenuItem(function: "Test",  imageName: "loveTangMillionTimes")
 ]
 

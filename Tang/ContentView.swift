@@ -38,10 +38,9 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle(Text("Tang"))
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
-
 
 
 

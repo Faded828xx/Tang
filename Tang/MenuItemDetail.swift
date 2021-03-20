@@ -13,7 +13,7 @@ func dateInterval() -> Int {
     let date1 = fmt.date(from: "2019-12-19T19:20:42+0000")!
     let date2 = Date()
     let diffs = Calendar.current.dateComponents([.day], from: date1, to: date2)
-    return diffs.day!
+    return diffs.day! + 2    // 老唐说她原本的app比这多两天 只好改成一样
 }
 
 // Moment 视图
@@ -38,7 +38,7 @@ struct Moment: View {
 struct Photo: View {
     var menuItem: MenuItem
     var body: some View {
-        Image(menuItem.imageName)
+        Image(menuItem.imageName).resizable().scaledToFit()
     }
 }
 
@@ -46,6 +46,6 @@ struct Photo: View {
 // debug?
 struct Moment_Previews: PreviewProvider {
     static var previews: some View {
-        Moment()
+        Photo(menuItem: menuItems[1])
     }
 }
